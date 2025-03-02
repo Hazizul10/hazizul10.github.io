@@ -27,32 +27,61 @@ Sentiment-Based Topic Modeling: Segmented reviews by sentiment and performed top
 Custom Stopwords Removal: Imported custom stopwords to remove common but uninformative words like "hotel" and "room."
 
 ### Data Preparation
-1. Data Preprocessing and Cleaning 
+1. Data Preprocessing and Cleaning
+The dataset Datafiniti_Hotel_Reviews_Jun19.csv was loaded using the pandas library.
+Duplicate reviews were identified and removed to ensure data integrity.
+
 The raw hotel review data underwent several preprocessing steps to ensure consistency and quality of the analysis. The following steps were performed:
 •	Removal of special characters, numbers, and punctuation.
 •	Conversion of text to lowercase.
-•	Removal of stopwords.
-•	Lemmatization to convert words into their base forms.
+•	Removal of stopwords using NLTK's stop words list and custom stop words (e.g., "hotel", "room")
+•	Lemmatization to convert words into their base forms using WordNetLemmatizer.
 
 2. Tokenization
 The text data was tokenized into individual words to facilitate further analysis. This process helped in breaking down the reviews into smaller components, making it easier to identify patterns and trends.
 
-3. Exploratory Data Analysis (EDA)
+4. Exploratory Data Analysis (EDA)
+•	Review Length Distribution: A histogram was created to visualize the distribution of review lengths, providing insights into the typical length of customer feedback.
+•	Word Frequencies: The most frequent words in the reviews were identified and visualized using a bar chart.
+•	Word Cloud: A word cloud was generated to highlight the most prominent words, offering a visual representation of key themes.
+•	N-gram Analysis: Bigrams (two-word sequences) were analyzed to understand common phrases and word combinations used in the reviews.
+
 Initial exploratory data analysis revealed that the majority of the reviews carried positive sentiment. The most common words in the dataset were fairly general, such as "good," "stay," and "service," which highlighted the need for more refined topic modelling.
 
-4. Sentiment Analysis
+6. Sentiment Analysis
 Sentiment analysis was conducted to classify reviews into positive, negative, and neutral categories. Additionally, a new column was added to the dataset to calculate review length and investigate whether review length played a role in sentiment distribution. The analysis indicated that longer reviews tended to express more detailed experiences, often associated with either very positive or very negative sentiments.
+
+•	Sentiment Distribution: A histogram was created to visualize the distribution of sentiment scores.
+•	Sentiment by Rating: Box plots were used to compare sentiment scores across different hotel ratings, revealing potential relationships between customer satisfaction and sentiment.
+•	Sentiment vs. Review Length: A scatter plot was used to explore the correlation between sentiment score and review length.
 
 ### Topic Modelling with LDA
 Latent Dirichlet Allocation (LDA) was used to uncover hidden topics within the reviews. The initial model with 5 topics produced overly general themes. To enhance the granularity of insights, the number of topics was increased to 10. This adjustment allowed for better identification of customer concerns and key strengths.
 
+### Visual Analysis
+Visualization of topic distributions using PyLDAvis provided an interactive way to explore the relationship between topics and keywords. This helped to better understand the dominant themes within the reviews and how they were associated with sentiment categories.
+
+• The pyLDAvis library was used to visualize the topics and their associated words, allowing for interactive exploration.
+• Initial topic modeling results were too general. Further analysis involved segregating the reviews based on sentiment (positive and negative) and then performing topic modeling separately. This segregation allowed for a more focused identification of topics     
+  relevant to positive and negative feedback, revealing more specific themes driving customer satisfaction or dissatisfaction.
+
+### Things done to improve Analysis
+• Custom stop words to remove words like "hotel", "room" and etc
+• Segregating Topics based on sentiment to perform modelling 
+
+
+
+### 
+
+  
 ### Evaluation
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
+By analyzing word frequencies, n-grams, and topic models, we can identify recurring themes and aspects frequently mentioned by customers in their reviews.
+Sentiment analysis provided a quantitative measure of customer satisfaction and highlights areas where the hotel excels or needs improvement.
+Segregating topics based on sentiment offers a more nuanced understanding of factors influencing positive and negative experiences.
 
 ## Recommendation and Analysis
-Explain the analysis and recommendations
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
+Further analysis could involve exploring the relationship between specific topics and customer ratings or demographics.
+The identified themes and sentiment insights can be used to inform hotel management about areas for improvement and strategies to enhance customer experience.
 
 ## AI Ethics
 Discuss the potential data science ethics issues (privacy, fairness, accuracy, accountability, transparency) in your project. 

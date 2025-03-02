@@ -65,19 +65,34 @@ Visualization of topic distributions using PyLDAvis provided an interactive way 
 • Initial topic modeling results were too general. Further analysis involved segregating the reviews based on sentiment (positive and negative) and then performing topic modeling separately. This segregation allowed for a more focused identification of topics     
   relevant to positive and negative feedback, revealing more specific themes driving customer satisfaction or dissatisfaction.
 
-### Things done to improve Analysis
-• Custom stop words to remove words like "hotel", "room" and etc
-• Segregating Topics based on sentiment to perform modelling 
+### Things done to further improve the Analysis
 
+#### Segregated Sentiment-Based Topic Modelling
+• To further improve the analysis, the dataset was segmented by sentiment categories before performing topic modelling. This approach yielded more targeted insights into the concerns expressed in negative reviews and the strengths highlighted in positive reviews.
 
-
-### 
-
+#### Custom Stopwords Removal
+To avoid skewed results, custom stopwords such as "hotel," "room," and other frequently occurring but non-informative words were removed. This step enhanced the clarity of the extracted topics.
   
-### Evaluation
-By analyzing word frequencies, n-grams, and topic models, we can identify recurring themes and aspects frequently mentioned by customers in their reviews.
-Sentiment analysis provided a quantitative measure of customer satisfaction and highlights areas where the hotel excels or needs improvement.
-Segregating topics based on sentiment offers a more nuanced understanding of factors influencing positive and negative experiences.
+### Evaluation: Identifying the key strengths in Topics
+
+#### Key Strengths Identified from Positive Reviews
+
+1. Topic #1: Friendly and Helpful Staff
+Top Words: staff, great, clean, friendly, helpful, historic
+Insight: Customers consistently praised the friendly and helpful attitude of the staff, especially in historic and high-traffic areas like the French Quarter.
+
+3. Topic #3: Scenic Views and Pool Facilities
+Top Words: great, view, nice, pool, location, perfect
+Insight: Guests enjoyed beautiful views and clean pool facilities, indicating these amenities positively impact customer satisfaction.
+
+4. Topic #7: Breakfast Quality and Free Parking
+Top Words: good, great, breakfast, parking, restaurant, free
+Insight: Complimentary breakfast and free parking were appreciated by customers, especially in budget-friendly hotels.
+
+6. Topic #9: Prime Location and Restaurant Options
+Top Words: great, location, restaurant, beach, enjoyed
+Insight: Hotels located near beaches, restaurants, and city attractions received positive feedback, especially in destinations like San Francisco and Waikiki.
+
 
 ## Recommendation and Analysis
 Further analysis could involve exploring the relationship between specific topics and customer ratings or demographics.

@@ -76,7 +76,6 @@ To avoid skewed results, custom stopwords such as "hotel," "room," and other fre
 ### Evaluation: Identifying the key strengths in Topics
 
 #### Key Strengths Identified from Positive Reviews
-
 1. Topic #1: Friendly and Helpful Staff
 Top Words: staff, great, clean, friendly, helpful, historic
 Insight: Customers consistently praised the friendly and helpful attitude of the staff, especially in historic and high-traffic areas like the French Quarter.
@@ -93,15 +92,61 @@ Insight: Complimentary breakfast and free parking were appreciated by customers,
 Top Words: great, location, restaurant, beach, enjoyed
 Insight: Hotels located near beaches, restaurants, and city attractions received positive feedback, especially in destinations like San Francisco and Waikiki.
 
+#### Key Strengths Identified from Negative Reviews
+1. Topic #4: Dirty Rooms and Smell Issues
+Top Words: dirty, smell, bed, floor, water, old
+Insight: The most common complaint was dirty rooms and unpleasant smells, particularly in older hotels.
 
-## Recommendation and Analysis
+2. Topic #6: Shower and Luggage Issues
+Top Words: shower, luggage, fix, microwave, dirty
+Insight: Guests frequently reported broken showers and dirty amenities like microwaves, which negatively impacted their stay.
+
+3. Topic #8: Poor Front Desk Service
+Top Words: desk, bad, bathroom, booked, bed
+Insight: Poor front desk service and issues with room bookings were recurring concerns across various hotels.
+
+4. Topic #10: Gym Facilities and Cleanliness
+Top Words: gym, cleanliness, food, decor, size
+Insight: The cleanliness of gym facilities and food quality were identified as areas needing improvement.
+
+### Recommendation and Analysis
+Based on the analysis, the following recommendations are proposed to enhance customer satisfaction:
+•	Improve Cleanliness Standards: Implement stricter cleaning protocols for rooms, bathrooms, and gym facilities.
+•	Upgrade Maintenance Services: Address frequent issues with showers, microwaves, and other room amenities promptly.
+•	Enhance Front Desk Training: Provide customer service training to improve front desk efficiency and communication.
+•	Expand Breakfast Options: Upgrade breakfast selections to offer more variety and better quality.
+•	Leverage Strengths in Marketing: Highlight friendly staff, prime locations, and free amenities in promotional materials.
+
+### Conclusion
+This report identifies both positive and negative aspects of customer experiences in hotels. By focusing on cleanliness, customer service, and maintenance, hotels can significantly improve guest satisfaction. Leveraging existing strengths in marketing campaigns will further enhance the hotel's reputation and customer loyalty.
+
 Further analysis could involve exploring the relationship between specific topics and customer ratings or demographics.
 The identified themes and sentiment insights can be used to inform hotel management about areas for improvement and strategies to enhance customer experience.
 
-## AI Ethics
-Discuss the potential data science ethics issues (privacy, fairness, accuracy, accountability, transparency) in your project. 
+### AI Ethics
+1. Privacy Concerns:
+•	Sensitive Information: Reviews might reveal sensitive information about individuals' preferences, habits, or experiences. Be mindful of potential privacy risks when analyzing and interpreting such data. Avoid making inferences or drawing conclusions that could   violate user privacy.
+2. Bias and Fairness:
+• Review Bias: Online reviews can be subject to various biases, including self-selection bias, where individuals with strong opinions are more likely to leave reviews. This can skew the analysis and lead to inaccurate conclusions about overall customer sentiment.
+• Algorithmic Bias: The sentiment analysis and topic modeling techniques used in my code rely on algorithms that can be susceptible to bias.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
+3. Data Security:
+• Data Storage: Hotel review data should be stored securely to prevent unauthorized access or breaches. Follow best practices for data security, including encryption and access control measures.
+• Data Sharing: Be cautious when sharing or publishing your findings, ensuring that any data shared is anonymized and does not violate privacy regulations or agreements.
+
+4. Transparency and Explainability:
+• Model Transparency: The algorithms used in my analysis, LDA, should be well-documented and understandable. Transparency about the models' limitations and potential biases is crucial for building trust in the results.
+
+7. Misuse of Insights:
+• Manipulative Marketing: The insights gained from my analysis could be misused for manipulative marketing practices, such as targeting specific customer segments with tailored messages that exploit their preferences or vulnerabilities. It's important to use the   insights responsibly and ethically.
+• Unfair Competition: Analyzing competitor reviews could potentially be used for unfair competitive advantage.
+
+#### Recommendations:
+• Prioritize Privacy: Anonymizing the data and ensuring compliance with privacy regulations.
+• Mitigate Bias: using Diverse datasets and evaluating algorithms for potential bias.
+• Ensure Security: Securely storing and sharing data.
+• Be Transparent: when Documenting methods, acknowledging limitations, and interpreting results.
+• Using Insights Ethically: Avoid manipulative marketing or unfair competition.
 
 ## Source Codes and Datasets
 [Upload your model files and dataset into a GitHub repo and add the link here. ](https://github.com/Hazizul10/ITD214_ProjectFiles.git)

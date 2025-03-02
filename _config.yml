@@ -1,13 +1,13 @@
-title: ITD214 Data Science Project
-author: Hazizul Humayun
+title: Data Science Project Showcase
+author:
   name: Hazizul Humayun
   email: hazizulhumayun@gmail.com
 
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
 description: >
- Hello World
-
+This project utilizes Natural Language Processing (NLP) techniques to analyze a dataset of hotel reviews. It leverages Python libraries and tools within Google Colab to perform text preprocessing, sentiment analysis, topic modeling, and data visualization to extract insights about customer sentiment, key themes, and factors driving customer satisfaction and dissatisfaction.
+By identifying recurring patterns and sentiment trends, this project provides valuable information for hotels to understand customer feedback and make data-driven improvements to enhance customer experience.
 # Build settings
 
 # If you clone the Minima repo and build locally, use this setting.
